@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.0" type="template" client="site">
+  <name>CWE</name>
+  <version>1.0</version>
+  <creationDate>01/09/2016</creationDate>
+  <author>CodeChap</author>
+  <authorEmail>hello@codechap.com</authorEmail>
+  <authorUrl>http://codechap.com</authorUrl>
+  <copyright>Copyright (C) 2016 Cushman &amp; Wakefield Excellerate</copyright>
+  <description>Brand template.</description>
+  <files>
+    <folder>assets</folder>
+    <folder>html</folder>
+    <folder>parts</folder>
+    <filename>index.php</filename>
+    <filename>favicon.ico</filename>
+    <filename>template_preview.png</filename>
+    <filename>template_thumbnail.png</filename>
+  </files>
+  <positions>
+    <position>debug</position>
+    <position>slider</position>
+    <position>menu</position>
+    <position>below_content_left</position>
+    <position>below_content_right</position>
+    <position>bottom</position>
+    <position>copyright</position>
+  </positions>
+  <config>
+    <fields name="params">
+      
+      <fieldset name="advanced">
+
+        <field name="company"  type="text" default="" label="Company name" description="Enter copyright company name" filter="raw" />
+        <field name="number"  type="text" default="" label="Phone number" description="Holding company number" filter="string" />
+
+        <field name="style" type="radio" label="Style" description="Colour style">
+          <option value="white">None</option>
+          <option value="red">Red</option>
+        </field>
+
+        <field name="analytics"  type="string" default="" label="Google Analytics Code" description="Your analytics tracking ID" filter="raw" />
+        <field name="addthiscode"  type="string" default="" label="Addthis Code" description="Your addthis tracking ID" filter="raw" />
+      </fieldset>
+
+      <fieldset name="social" label="Social">
+        <field name="facebook"  type="url" default="" label="Facebook page" description="Link to Facebook" filter="url" />
+        <field name="twitter"  type="url" default="" label="Twitter page" description="Link to Twitter" filter="url" />
+        <field name="linkedin"  type="url" default="" label="LinkedIn page" description="Link to Linked In" filter="url" />
+        <field name="pinterest"  type="url" default="" label="Pinterest page" description="Link to Pinterest" filter="url" />
+        <field name="googlePlus"  type="url" default="" label="Google Plus page" description="Link to Google Plus" filter="url" />
+        <field name="youtube"  type="url" default="" label="Youtube" description="Link to youtube" filter="url" />
+        <field name="instagram"  type="url" default="" label="Instagram" description="Link to Instagram" filter="url" />
+      </fieldset>
+
+    </fields>
+  </config>
+</extension>
