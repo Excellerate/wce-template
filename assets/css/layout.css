@@ -2,6 +2,7 @@
 html, body{
 	font-family: "Arial", sans-serif;
 	font-size:13px;
+	background-color:#ccc;
 }
 
 /* PRIMARY COLOURS */
@@ -27,10 +28,6 @@ html, body{
 .lime{color:#B5BD00;}
 .orange{color:#FF671F;}
 
-.body{
-	background-color:#ccc !important;
-}
-
 /* REDS */
 .ui.grid>.red.column, .ui.grid>.red.row, .ui.grid>.row>.red.column{
 	background-color:#E4002B !important;
@@ -53,7 +50,7 @@ html, body{
 	}
 
 /* GRID WORK */
-.grid:not(.column .grid){
+.grid{
 	background-color:white;
 }
 .ui.grid>.column.unpadded:not(.row), .ui.grid>.row>.column.unpadded{
@@ -116,6 +113,14 @@ html, body{
 		margin-top:15px;
 		font-size:12px;
 	}
+	.service.segment.a{padding-top:25px;}
+	.service.segment.b{padding-top:45px;}
+	.service.segment.c{padding-top:45px;}
+	.service.segment.d{padding-top:45px;}
+	.service.segment.e{padding-top:30px;}
+	.service.segment.f{padding-top:30px;}
+	.service.segment.g{padding-top:35px;}
+	.service.segment.h{padding-top:35px;}
 
 /* SLIDER */
 #slider{
@@ -160,6 +165,7 @@ html, body{
 }
 #me{
 	font-size:10px;
+	background-color:#ccc;
 }
 	#me *{
 		color:#333;
