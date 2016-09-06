@@ -28,6 +28,11 @@ html, body{
 .lime{color:#B5BD00;}
 .orange{color:#FF671F;}
 
+/* TEXT */
+h1.ui.header{
+	margin-bottom:30px;
+}
+
 /* REDS */
 .ui.grid>.red.column, .ui.grid>.red.row, .ui.grid>.row>.red.column{
 	background-color:#E4002B !important;
