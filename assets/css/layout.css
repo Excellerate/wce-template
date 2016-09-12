@@ -31,6 +31,10 @@ html, body{
 /* TEXT */
 h1.ui.header{
 	margin-bottom:30px;
+	text-transform:uppercase;
+	text-align:center;
+	font-size:33px !important;
+	font-weight:100 !important;
 }
 
 /* REDS */
@@ -47,7 +51,7 @@ h1.ui.header{
 /* CALL TO ACTION */
 .ui .button{
 	background: #E4002B;
-	color:white;
+	color:white !important;
 }
 	.ui .button:hover{
 		background: #A6192E;
@@ -64,14 +68,6 @@ h1.ui.header{
 }
 .ui.grid>.column.unpadded:not(.row){
 	padding-bottom:0rem !important;
-}
-
-/* HEADERS */
-.ui.header{
-	text-transform:uppercase;
-	text-align:center;
-	font-size:33px !important;
-	font-weight:100 !important;
 }
 
 /* MODULES */
@@ -167,6 +163,7 @@ h1.ui.header{
 }
 #copyright{
 	text-transform:uppercase;
+	font-size:10px;
 }
 #me{
 	font-size:10px;

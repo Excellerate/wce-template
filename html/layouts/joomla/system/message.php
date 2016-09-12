@@ -8,29 +8,32 @@
  */
 
 defined('_JEXEC') or die;
-
 $msgList = $displayData['msgList'];
-
 $alert = array('error' => 'alert-error', 'warning' => '', 'notice' => 'alert-info', 'message' => 'alert-success');
 ?>
-<div id="system-message-container">
-  <?php if (is_array($msgList) && !empty($msgList)) : ?>
-    <div id="system-message">
-      <?php foreach ($msgList as $type => $msgs) : ?>
-        <div class="alert <?php echo isset($alert[$type]) ? $alert[$type] : 'alert-' . $type; ?>">
-          <?php // This requires JS so we should add it trough JS. Progressive enhancement and stuff. ?>
-          <a class="close" data-dismiss="alert">×</a>
 
-          <?php if (!empty($msgs)) : ?>
-            <h4 class="alert-heading"><?php echo JText::_($type); ?></h4>
-            <div>
-              <?php foreach ($msgs as $msg) : ?>
-                <div class="alert-message"><?php echo $msg; ?></div>
-              <?php endforeach; ?>
-            </div>
-          <?php endif; ?>
-        </div>
+<?php if (is_array($msgList) && !empty($msgList)) : ?>
+<div id="system-message-container" class="ui modal">
+  <div class="header">Message</div>
+    <div class="content">
+      <?php foreach ($msgList as $type => $msgs) : ?>
+        <?php if (!empty($msgs)) : ?>
+          <?php foreach ($msgs as $msg) : ?>
+            <p><?php echo $msg; ?></p>
+          <?php endforeach; ?>
+        <?php endif; ?>
       <?php endforeach; ?>
     </div>
-  <?php endif; ?>
+    <div class="actions">
+      <div class="ui cancel button">OK</div>
+    </div>
+  </div>
 </div>
+
+<script>
+  jQuery(document).ready(function(){
+    $("#system-message-container").modal('show');
+  });
+</script>
+
+<?php endif; ?>

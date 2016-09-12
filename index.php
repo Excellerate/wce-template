@@ -60,6 +60,8 @@
 	<!-- Mobile Menu Push -->
 	<div class="pusher">
 
+	<jdoc:include type="message" />
+
 		<!-- Top -->
 		<?php include('parts/top.php'); ?>
 
@@ -82,9 +84,6 @@
 		<!-- My info -->
 		<?php include('parts/me.php'); ?>
 	</div>
-
-	<!-- Gmaps -->
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASFNQhc-GFj2QiEqQeBdh1lCGjmN5RVe8&callback=initMap"></script>
 
 	<!-- Debuging -->
 	<jdoc:include type="modules" name="debug" style="none" />

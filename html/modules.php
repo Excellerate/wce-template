@@ -62,13 +62,12 @@ function modChrome_grey($module, &$params, &$attribs)
 	print '</div>';
 }
 
-function modChrome_map($module, &$params, &$attribs)
+function modChrome_no_padding($module, &$params, &$attribs)
 {
 	$showTitle = $module->showtitle;
 
 	print '<div class="map module unpadded column">';
 		print $showTitle ? '<div class="ui header">'.$module->title.'</div>' : null;
 		print $module->content;
-		print '<div id="map" style="width:100%; height:300px;">loading...</div>';
 	print '</div>';
 }
