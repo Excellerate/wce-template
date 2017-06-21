@@ -22,6 +22,8 @@
     <position>debug</position>
     <position>slider</position>
     <position>menu</position>
+    <position>newsflash</position>
+    <position>above_content</position>
     <position>below_content_left</position>
     <position>below_content_right</position>
     <position>bottom</position>

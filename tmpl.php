@@ -28,6 +28,8 @@
   $doc->addScript($this->baseurl . '/templates/' . $this->template . '/assets/js/actions.js', 'text/javascript');
 
   // Find modules
+  $newsflash = $this->countModules('newsflash');
+  $aboveContent = $this->countModules('above_content');
   $belowContentLeft = $this->countModules('below_content_left');
   $belowContentRight = $this->countModules('below_content_right');
   $bottom = $this->countModules('bottom');

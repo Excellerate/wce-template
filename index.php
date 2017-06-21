@@ -68,8 +68,14 @@
 		<!-- Slider -->
 		<?php include('parts/slider.php'); ?>
 
+		<!-- Above content -->
+		<?php include('parts/aboveContent.php'); ?>
+
 		<!-- Content -->
 		<?php include('parts/content.php'); ?>
+
+		<!-- Newsflash -->
+		<?php include('parts/newsflash.php'); ?>
 
 		<!-- Bottom possitions -->
 		<?php include('parts/belowContent.php'); ?>

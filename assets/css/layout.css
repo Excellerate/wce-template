@@ -42,11 +42,17 @@ h1.ui.header{
 	background-color:#E4002B !important;
 }
 .ui.grid .column a{
-	color:#E4002B;
+	color:#000000;
+	color:rgba(0, 0, 0, .87);
 }
 	.ui.grid .column a:hover{
 		color:#A6192E;
 	}
+
+.grey.background{
+	background-color:#e5e5e5;
+	padding:15px;
+}
 
 /* CALL TO ACTION */
 .ui .button{
